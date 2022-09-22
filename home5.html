@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <link href = "style.css" rel = "stylesheet"/>
+        <link rel = "shortcut icon" sizes = "16x16 32x32 64x64" href = "https://s.pstatic.net/static/www/u/2014/0328/mma_204243574.png"/>
+        <title>Home - My first website.</title>
+        <meta charset = "utf-8"/>
+        <meta name = "description" content = "This is my website"/>
+        <style>
+        
+    button:active{
+        background-color:blueviolet;
+    }
+    
+    /*button:hover{
+        background-color: fuchsia;
+    }
+   */
+  
+   input:focus{
+        background-color: fuchsia;
+    }
+   
+
+   a:visited{
+       color: tomato;
+   }
+
+   a:focus{
+       color: turquoise;
+   }
+
+   a:hover{
+       color: teal;
+   }
+
+   form{
+       border: 1px solid salmon;
+       display: flex;
+       flex-direction: column;
+       padding: 20px;
+   }
+
+   form:focus-within{
+       border-color: seagreen;
+   }
+
+   form:hover input:focus{
+       background-color: sienna;
+   }
+
+   input::placeholder{
+       color:  yellow;
+   }
+
+   p::selection{
+    color: white;
+    background-color: rgba(252,206,0,0.5);
+   }
+
+
+   p::first-letter{
+   font-size:large;
+   }
+</style>
+</head>
+<body>
+
+<p>가나다라마바사아자차카타파하</p>
+
+    <a href = https://apple.com>go to apple</a>
+<input type = "text" placeholder="Name"/>
+<input type = "text" placeholder="Name"/>
+<button>hello</button>
+
+<form>
+    <input type = "text" name = "" id = ""/>
+    <input type = "text" name = "" id = ""/>
+    <input type = "text" name = "" id = ""/>
+</form>
+</body>

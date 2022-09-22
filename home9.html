@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <link href = "style.css" rel = "stylesheet"/>
+        <link rel = "shortcut icon" sizes = "16x16 32x32 64x64" href = "https://s.pstatic.net/static/www/u/2014/0328/mma_204243574.png"/>
+        <title>Home - My first website.</title>
+        <meta charset = "utf-8"/>
+        <meta name = "description" content = "This is my website"/>
+        <style>
+   body{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     height: 1000vh;
+     flex-direction: column;
+    }
+
+div{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+span{
+    font-size: 36px;
+}
+
+@media print{
+    body{
+        background-color: tomato;
+    }
+}
+
+@media screen and (orientation: landscape){
+    span{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: landscape){
+    div{
+        background-color: tomato;
+    }
+}
+ /*   @media screen and (min-width: 2001px) and (max-width: 5000px){
+    div{
+        background-color: teal;
+    }
+    }
+    @media screen and (min-width: 5001px){
+    div{
+        background-color: turquoise;
+    }
+}*/
+
+            </style>
+            </head>
+
+            <body>
+                <div></div>
+                <span>Please flip your phone</span>
+                </body>

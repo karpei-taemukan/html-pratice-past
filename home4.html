@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang = "kr">
+    <head>
+        <link href = "style.css" rel = "stylesheet"/>
+        <link rel = "shortcut icon" sizes = "16x16 32x32 64x64" href = "https://s.pstatic.net/static/www/u/2014/0328/mma_204243574.png"/>
+        <title>Home - My first website.</title>
+        <meta charset = "utf-8"/>
+        <meta name = "description" content = "This is my website"/>
+        <style>
+        
+        body{ 
+            height: 1000vh;
+            margin: 100px;
+        }
+
+span{
+    background-color: yellowgreen;
+    color: tomato;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+div{
+    padding: 10px;
+}
+div p span{
+    color:aqua;
+}
+
+div > span{
+    text-decoration: underline;
+}
+
+p + span{
+    text-decoration:underline;
+}
+
+p ~ span{     
+text-decoration: underline; }
+/*input{
+    border: 1px solid wheat;
+}*/
+
+input:optional{
+    border: 1px solid wheat;
+}
+
+input:required{
+    border-color: tomato;
+}
+
+input[type = "password"]{
+background-color: thistle;
+}
+
+
+input[placeholder ~= "username"]{
+background-color:pink;
+}
+</style>
+</head>
+<body>
+<form>
+    <input type = "text" placeholder="First username">
+    <input type = "text" placeholder="Second username">
+    <input type = "password" required placeholder="password"/>
+</form>
+
+
+<div>
+    <span>hello</span>
+<p>가나다라마바사아자차카타파하.
+<span>inside</span> </p>
+<span>bye</span>
+<address>hi</address> 
+<span>hello</span>
+</div>
+
+</body>
